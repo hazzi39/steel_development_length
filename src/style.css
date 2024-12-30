@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tooltip {
+  @apply invisible absolute bg-gray-900 text-white p-2 rounded text-sm;
+  max-width: 250px;
+}
+
+.has-tooltip:hover .tooltip {
+  @apply visible z-50;
+}
+
+.input-group {
+  @apply mb-4;
+}
+
+.input-label {
+  @apply block text-sm font-medium text-gray-700 mb-1;
+}
+
+.input-field {
+  @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm;
+}
+
+.error-message {
+  @apply text-red-600 text-sm mt-1;
+}
+
+.result {
+  @apply text-lg font-semibold text-gray-900;
+}
